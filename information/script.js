@@ -4,8 +4,7 @@ const urlParams = new URLSearchParams(queryString);
 const subjectToGet = urlParams.get("subject");
 const grade = urlParams.get("grade");
 
-var getUrl = window.location;
-var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+var baseUrl = window.location.origin;
 
 function b64DecodeUnicode(str) {
     return decodeURIComponent(atob(str).split('').map(function(c) {
