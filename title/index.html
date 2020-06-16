@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kevin's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<svg viewBox="0 0 1160 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="40%" id="textF">placeholder</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+</body>
+
+<script>
+
+    const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+document.getElementById("textF").textContent  =  urlParams.get('texto');
+
+  </script>
+</html>
