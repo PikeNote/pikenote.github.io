@@ -12,6 +12,17 @@ function b64DecodeUnicode(str) {
     }).join(''));
 }
 
+function imageExists(image_url){
+
+    var http = new XMLHttpRequest();
+
+    http.open('HEAD', image_url, false);
+    http.send();
+
+    return http.status != 404;
+
+}
+
 document.getElementById("tab-1").style.visibility="hidden";
 document.getElementById("tab-2").style.visibility="hidden";
 document.getElementById("tab-3").style.visibility="hidden";
@@ -41,7 +52,14 @@ for (i=0; i<baseRe.length; i++) {
   document.getElementById(`tab${i+1}`).style.visibility = "visible";
   document.getElementById(`tab${i+1}`).innerHTML=baseRe[i]["title"];
   document.getElementById(`con${i+1}-title`).innerHTML=baseRe[i]["title"];
-  document.getElementById(`con${i+1}`).innerHTML += `<p><img src="${baseUrl}/img/${grade}/${baseRe[i]["image"]}" align="left" style="padding-right: 15px;"/>${baseRe[i]["desc"]}</p>`
+  
+  var imageURL = `${baseUrl}/img/${grade}/${baseRe[i]["image"]}`;
+  
+  if (!imageExists(imageURL)) {
+  	imageURL.replace(".png", ".PNG");
+  }
+  
+  document.getElementById(`con${i+1}`).innerHTML += `<p><img src="${imageURL}" align="left" style="padding-right: 15px;"/>${baseRe[i]["desc"]}</p>`
 
   if(baseRe[i].hasOwnProperty("embed")) {
     document.getElementById(`con${i+1}`).innerHTML += `<a href="#ex${i+1}" rel="modal:open" class="button button2">View Project</a>`
