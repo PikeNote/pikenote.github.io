@@ -54,7 +54,6 @@ for (i=0; i<baseRe.length; i++) {
   document.getElementById(`con${i+1}-title`).innerHTML=baseRe[i]["title"];
   
   var imageURL = `${baseUrl}/img/${grade}/${baseRe[i]["image"]}`;
-  console.log(!imageExists(imageURL));
   if (!imageExists(imageURL)) {
   	imageURL = imageURL.replace(".png", ".PNG");
   }
