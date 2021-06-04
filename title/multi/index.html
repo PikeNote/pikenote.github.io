@@ -9,6 +9,7 @@
 
 </head>
 <body>
+	<div class="svg-container">
 <svg viewBox="0 0 1210 300">
 	<symbol id="s-text">
 		<text text-anchor="middle" x="50%" y="45%" id="text1"></text>
@@ -23,6 +24,7 @@
 		<use xlink:href="#s-text" class="text-copy"></use>
 	</g>
 </svg>
+</div>
 </body>
 
 <script>
@@ -32,4 +34,9 @@ const urlParams = new URLSearchParams(queryString);
 document.getElementById("text1").textContent  =  urlParams.get('texto');
 document.getElementById("text2").textContent  =  urlParams.get('textt');
   </script>
+    <style>
+		.svg-container {
+	width: 10em;
+  }
+	</style>
 </html>
