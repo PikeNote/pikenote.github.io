@@ -1,6 +1,8 @@
-  {
+[
+    {
     "title":"Music List",
     "image":"music.jpg",
     "desc":"In AP Computer Science A, we went through many concepts of Java such as lists, arrays, dictionaries, recusion, etc. through the building of small applications to get used to it. This helped me grasp a bunch of the syntax and how it is written. I came into the class with a bit of programming knowledge and I saught to push myself alongside the many of these projects that I had to for the class. This project in particular was when we were learning lists and I wanted to challenge myself to learn about APIs and how to use them properly in Java. The aim was to create an application where one can search up music annd add it to their list along with allowing the user to rate it. I wanted to enhance my project by pulling data from a real world API with actual music. I had major challenges while doing this however. Compared to the other languages I had used before like Python, processing data was completely differently. Java is completely class-based and I had to cast aspects of the data I got back into these classes. I was able to do trial and error as I went and ended up making a great final product. This was one of the best projects I pushed myself to make while learnin Java, and I hope to do more advanced things such as a proper user interface sometime down the line.",
     "embed":"PGlmcmFtZSBmcmFtZWJvcmRlcj0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iNTAwcHgiIHNyYz0iaHR0cHM6Ly9yZXBsaXQuY29tL0BQaWtlTm90ZS9BcnJheUxpc3QtTXVzaWM/ZW1iZWQ9dHJ1ZT8iPjwvaWZyYW1lPg=="
   }
+]
